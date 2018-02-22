@@ -72,7 +72,7 @@ public class Main {
                         //Thread.sleep(1000);
                         //SoundUtils.tone(100,1000);
                         //Thread.sleep(1000);
-                        SoundUtils.tone(5000,100);
+                        SoundUtils.tone(2000,2500);
                         Thread.sleep(1000);
                         //SoundUtils.tone(400,500);
                         //Thread.sleep(1000);
