@@ -12,7 +12,7 @@ public class Main {
                 System.out, Charset.forName("UTF8"));
         terminal.enterPrivateMode();
         terminal.setCursorVisible(false);
-        terminal.applyBackgroundColor(Terminal.Color.CYAN);
+        //terminal.applyBackgroundColor(Terminal.Color.CYAN);
 
         Player player = new Player(50, 15);
 

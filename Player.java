@@ -13,7 +13,7 @@ public class Player {
         this.lubbe = lubbe;
     }
 
-    private char lubbe = '\u263a';
+    private char lubbe = '☺';
 
     public Player(int x, int y) {
         this.x = x;

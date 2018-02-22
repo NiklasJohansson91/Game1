@@ -13,7 +13,7 @@ public class Monster {
         this.monster = monster;
     }
 
-    private char monster = '\255';
+    private char monster = '\u2622';
 
     public Monster(int x, int y) {
         this.x = x;
