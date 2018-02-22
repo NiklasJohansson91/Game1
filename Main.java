@@ -4,14 +4,19 @@ import com.googlecode.lanterna.TerminalFacade;
 import com.googlecode.lanterna.input.Key;
 import com.googlecode.lanterna.terminal.Terminal;
 
+import javax.sound.sampled.LineUnavailableException;
 import java.nio.charset.Charset;
 
+
 public class Main {
-    public static void main(String[] args) throws InterruptedException {
+    public static void main(String[] args) throws InterruptedException, LineUnavailableException {
         Terminal terminal = TerminalFacade.createTerminal(System.in,
                 System.out, Charset.forName("UTF8"));
         terminal.enterPrivateMode();
         terminal.setCursorVisible(false);
+
+
+
         //terminal.applyBackgroundColor(Terminal.Color.CYAN);
 
         Player player = new Player(50, 15);
@@ -59,6 +64,20 @@ public class Main {
 
                     writeMessage(terminal, message, x, y);
 
+                    for (int o = 0; o < 100; o++) {
+                    /*    Toolkit.getDefaultToolkit().beep();
+                        Thread.sleep(1000);
+                    */
+                      //  SoundUtils.tone(1000,100);
+                        //Thread.sleep(1000);
+                        //SoundUtils.tone(100,1000);
+                        //Thread.sleep(1000);
+                        SoundUtils.tone(5000,100);
+                        Thread.sleep(1000);
+                        //SoundUtils.tone(400,500);
+                        //Thread.sleep(1000);
+                        //SoundUtils.tone(400,500, 0.2);
+                    }
                     gameState=false;
                     x = 45;
                     break;
